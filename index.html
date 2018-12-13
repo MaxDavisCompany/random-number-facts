@@ -45,7 +45,7 @@
     //   console.log(number);
     //
     //   let xhr = new XMLHttpRequest();
-    //   xhr.open('GET', 'http://numbersapi.com/'+number);
+    //   xhr.open('GET', 'https://numbersapi.com/'+number);
     //
     //   xhr.onload = function() {
     //     if(this.status ==200 && number!= '') {
@@ -61,7 +61,7 @@
     function getFactFetch() {
       let number = numberInput.value;
 
-      fetch('http://numbersapi.com/'+number)
+      fetch('https://numbersapi.com/'+number)
          .then(response => response.text())
          .then(data => {
            if(number != '') {
